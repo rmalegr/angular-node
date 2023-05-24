@@ -22,7 +22,7 @@ const validateToken = (req: Request, res: Response, next: NextFunction) => {
     }
   } else {
     res.status(401).json({
-      message: "No tienes autorización",
+      message: "Acceso denegado",
     });
   }
 };

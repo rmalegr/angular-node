@@ -17,6 +17,7 @@ class Server {
     this.routes();
     this.dbConnect();
   }
+  
 
   listen() {
     this.app.listen(this.port, () => {
@@ -30,6 +31,7 @@ class Server {
   }
 
   midlewares() {
+    // Un midlewares es
     // Parseo body
     this.app.use(express.json());
 
